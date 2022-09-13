@@ -1,7 +1,11 @@
+/* 
+Theme name: AlcoMed
+*/
+
 @import '../css/reset.css';
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:regular,500,600,700,800,900&display=swap);
 
-.body {
+body {
     font-family: 'Roboto Slab', serif;
 }
 
@@ -18,7 +22,6 @@
 /* Header */
 
 .container {
-    font-family: 'Roboto Slab';
     max-width: 1330px;
     padding: 0 20px;
     margin: 0 auto;
@@ -58,7 +61,6 @@
 }
 
 .slider__container {
-    font-family: 'Roboto Slab';
     display: flex;
     align-items: center;
     width: 100%;
@@ -90,6 +92,29 @@
     margin-bottom: 30px;
 }
 
+.header__navigations {
+    background: var(--dark-blue-color);
+    color: var(--white-txt);
+}
+
+.header__navigations__list {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header__navigations__list li {
+    padding: 15px 20px;
+    margin-right: 50px
+}
+
+.header__navigations__list li:hover {
+    padding: 15px 20px;
+    background: #2f5dc8;
+    cursor: pointer;
+}
+
 /* Buttons */
 
 .btn {
@@ -113,16 +138,15 @@ h1 {
 
 .title-1 {
     color: var(--dark-blue-color);
-    font-family: 'Roboto Slab';
     font-weight: 700;
     font-size: 45px;
     line-height: 40px;
     text-align: center;
+    
 }
 
 .title-2 {
     color: var(--dark-blue-color);
-    font-family: 'Roboto Slab';
     font-weight: 700;
     font-size: 35px;
     line-height: 40px;
@@ -386,8 +410,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.text.footer-text  {
-    font-family: 'Roboto Slab';
+.footer__text  {
     font-size: 25px;
     line-height: 25px;
     color: var(--black);
@@ -397,7 +420,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.background__right__block {
+.background__footer__block {
     background: var(--dark-blue-color);
 }
 
@@ -410,18 +433,47 @@ h1 {
     align-items: center;
 }
 
-.right__text {
+.footer__navigations__block .icon-text__block {
+    margin-top: 10px;
+}
+
+.footer__text-2 {
+    font-size: 16px;
     color: var(--white-txt);
 }
 
-.social__icon__block {
+.footer__columns {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.social__icon__block img {
-    margin-left: 10px;
+.footer__column {
+    max-width: 300px;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
+.footer__title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-txt);
+    margin-bottom: 10px;
+}
+
+.footer__navigations__block {
+    padding: 50px 20px;
+}
+
+.footer__text__right__block {
+    font-size: 13px;
+    max-width: 550px;
+}
+
+.footer__navigations__list li {
+    color: var(--white-txt);
+}
 
 
 @media (max-width: 1150px) {
